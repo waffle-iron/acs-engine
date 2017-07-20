@@ -313,8 +313,3 @@ func (a *AgentPoolProfile) GetSubnet() string {
 func (a *AgentPoolProfile) SetSubnet(subnet string) {
 	a.subnet = subnet
 }
-
-// IsSwarmMode returns true if this template is for Docker CE orchestrator
-func (o *OrchestratorProfile) IsSwarmMode() bool {
-	return o.OrchestratorType == DockerCE
-}
